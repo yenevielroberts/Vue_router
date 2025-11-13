@@ -1,11 +1,21 @@
-<script setup></script>
+<script setup>
+import Home from './views/Home.vue';
+
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+
+  <nav>
+    <RouterLink to="/">
+      Home
+    </RouterLink>
+    <RouterLink to="/frameworks">
+      Frameworks
+    </RouterLink>
+  </nav>
+  <!--Ventana donde se mostrarán los componentes que devuelvan las rutas. Segun el enlace que clique se mostrará aquí una información u otra-->
+  <RouterView />
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
