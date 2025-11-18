@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import  Home from '@/views/Home.vue'
 import  Frameworks from '@/views/Frameworks.vue'
-import FrameworkDetail from '@/views/FrameworkDetail.vue'
+import FrameworkDetail2 from '@/views/FrameworkDetail2.vue'
 
 //Función que crea las rutas
 const router = createRouter({
@@ -14,7 +14,7 @@ const router = createRouter({
     {path: "/frameworks", 
       name:"frameworks", 
       component:Frameworks, 
-      children:[{path:"/frameworks/:id", name:"frameworkdetail", component:FrameworkDetail }]}
+      children:[{path:"/frameworks/:id", name:"frameworkdetail", component:FrameworkDetail2 }]}
   ],
 })
 
